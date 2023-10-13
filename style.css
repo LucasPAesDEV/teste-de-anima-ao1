@@ -1,0 +1,32 @@
+body {
+    overflow: hidden;
+}
+
+body .conteudo {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+img {
+    width: 300px;
+    transform: translateX(0px);
+    animation: float 6s ease-out infinite;
+    z-index: 1;
+}
+
+@keyframes float {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-100px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
